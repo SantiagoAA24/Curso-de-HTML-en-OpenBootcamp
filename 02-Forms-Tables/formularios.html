@@ -12,17 +12,27 @@
     <form action="resultados.html" method="GET">
         <div>
             <label for="nombreUsuario">Nombre de usuario</label>
-            <input type="text" name="Nombre usuario" id="nombreUsuario" required />
+            <input type="text" name="Nombre usuario" id="nombreUsuario" />
         </div>
         <br>
         <div>
             <label for="password">Contraseña</label>
-            <input type="password" name="Contraseña" id="password" required />
+            <input type="password" name="Contraseña" id="password" />
+        </div>
+        <br>
+        <div>
+            <label for="email">¿Cuál es tu email?</label>
+            <input type="email" name="Email" id="email" />
         </div>
         <br>
         <div>
             <label for="edad">¿Cuál es tu edad?</label>
-            <input type="" name="Contraseña" id="password" required />
+            <input type="number" name="Edad" id="edad" min="0" max="200" step="5" />
+        </div>
+        <br>
+        <div>
+            <label for="nacimiento">¿Cuál es tu fecha de nacimiento?</label>
+            <input type="date" name="Nacimiento" id="nacimiento" />
         </div>
         <br>
         <div>

@@ -1,0 +1,41 @@
+/* Selector de etiqueta */
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/* Combinación de selectores */
+p #primera-noticia {
+    color: gray;
+    font-size: 12pt;
+}
+
+/* Selector de id */
+#segunda-noticia {
+    /* color: darkmagenta; */
+    font-size: 10pt;
+}
+
+/* Selector de clase */
+.encabezado {
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+/* Selector universal */
+* {
+    color: green;
+}
+
+.war {
+    color: red;
+}
+
+/* Mismo estilo para varios selectores */
+.autor, .fecha, .ubicacion {
+    text-decoration: underline;
+}

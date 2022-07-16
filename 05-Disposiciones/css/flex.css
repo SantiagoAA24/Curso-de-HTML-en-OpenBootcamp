@@ -1,0 +1,54 @@
+.flex {
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    
+    /* Eje principal */
+    flex-direction: row;
+    /* Por defecto */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* Alineación horizontal */
+    /* justify-content: center; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    
+    flex-wrap: nowrap;
+    /* Redimensiona los elementos */
+    /* flex-wrap: wrap; */
+    /* No redimensiona los elementos, creando más lineas */
+    
+    /* Alineación vertical */
+    /* align-items: stretch; */
+    /* Por defecto -> Losa elementos ocupan todo el div */
+    align-items: center;
+    /* align-items: flex-start;
+    align-items: flex-end; */
+}
+
+/* Documentación: https://codepen.io/enxaneta/full/adLPwv */
+
+.contenido-1 {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+}

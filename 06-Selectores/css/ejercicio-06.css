@@ -1,0 +1,18 @@
+.clase-boton {
+    background-color: aqua;
+    font-family: Cambria;
+    font-size: medium;
+}
+
+.clase-boton::after {
+    content: "Pasa por encima";
+}
+
+.clase-boton:hover {
+    color: white;
+    background-color: green;
+}
+
+.clase-boton::after {
+    content: "¡Hecho!";
+}

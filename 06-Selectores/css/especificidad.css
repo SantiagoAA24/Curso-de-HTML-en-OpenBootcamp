@@ -1,0 +1,32 @@
+#h1-id {
+    color: darksalmon;
+}
+
+h1#h1-id.h1-clase {
+    color: blueviolet;
+}
+
+.h1-clase {
+    color: yellow;
+}
+
+h1 {
+    color: blue !important;
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+/* Los .css se leen de arriba a abajo */
+/* Especificidad:
+1. !important (evitar usarlo)
+2. style inline
+3. (1,0,0) id
+4. (0,1,0) class
+5. (0,0,1) etiqueta
+6. (0,0,0) */

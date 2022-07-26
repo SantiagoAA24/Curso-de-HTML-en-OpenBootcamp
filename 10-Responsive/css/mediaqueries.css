@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+/* media: solo afecta a los dispositivos especificados con ciertas condiciones */
+/* Posibilidades:
+@media all {} -> Por defecto
+@media screen {}
+@media print {}
+@media speech {} */
+
+/* @media (max-width: 995px) {
+    h1 {
+        color: green;
+    }
+} */
+
+/* @media (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+} */
+
+/* Fist Mobile */
+
+@media (min-width: 576px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media (min-width: 995px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* @media (orientation: landscape) and (min-height: 400px) {
+    p {
+        color: brown;
+    }
+} */
+
+@media (min-height: 300px), (min-width: 1100px) {
+    h1 {
+        color: darksalmon;
+    }
+}

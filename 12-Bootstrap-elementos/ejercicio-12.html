@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="bg-info p-3 rounded-3">
+            <div class="container-fluid py-4">
+                <h1 class="display-5 fw-bold">Jumbotron de prueba</h1>
+                <p class="col-md-8 fs-4">
+                    Incididunt consectetur do dolor anim irure commodo. Est eiusmod laboris officia tempor officia labore consectetur pariatur exercitation laboris ad aliquip ea. Sunt laboris laboris magna quis magna sit id aute qui sit adipisicing sunt excepteur.
+                </p>
+                <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#modal-prueba">
+                    Abrir ventana modal
+                </button>
+                <div id="modal-prueba" class="modal fade" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="display-6">Ventana modal</p>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Este es el contenido de la ventana modal de prueba para el  
+                                    <a href="#"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    title="El botón de llamada a la acción debe abrir una ventana modal.">
+                                    ejercicio planteado.</a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                                <button class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="bg-light py-5 rounded-3 d-flex justify-content-center" style="width: 60vw;">
+                <form action="">
+                    <div class="input-group" style="width: 40vw;">
+                        <div class="input-group-text">
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </div>
+                        <div class="form-floating">
+                            <input id="nombre" type="text" class="form-control" placeholder="Tu nombre">
+                            <label for="nombre">Tu nombre</label>
+                        </div>
+                    </div>
+                    <div class="input-group mt-3" style="width: 40vw;">
+                        <div class="input-group-text">
+                            <i class="bi bi-telephone-fill fs-2"></i>
+                        </div>
+                        <div class="form-floating">
+                            <input id="telefono" type="text" class="form-control" placeholder="Tu telefono">
+                            <label for="telefono">Tu teléfono</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Mensaje" id="mensaje"></textarea>
+                        <label for="mensaje">Deja un mensaje aquí</label>
+                    </div>
+                    <div class="mt-3 row">
+                        <button class="btn btn-info">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4 mb-4">
+            <div class="card" style="width: 50vw;">
+                <div class="card-header bg-info">
+                    <p class="display-6 mb-0">Santiago Acevedo</p>
+                </div>
+                <div class="card-body">
+                    Desarrollador de aplicaciones web con conocimiento tanto en Front-end como en Back-end, en lenguajes de programación como HTML, CSS, JS, .NetCore, etc.
+                </div>
+                <div class="card-footer bg-info">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <i class="bi bi-envelope fs-2"></i>
+                        </div>
+                        <div class="input-group-text">
+                            santiago.acevedo.m24@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+</html>

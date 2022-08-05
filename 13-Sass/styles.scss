@@ -1,0 +1,22 @@
+// Compoenentes
+@use "sass/componentes";
+// $color -> componenetes.$color
+// @use "sass/componentes" as comp;
+// namespace = comp
+// $color -> comp.$color
+
+// Mixins
+// @use "sass/mixins" as *; (se usa * para crear variables generales)
+@use "sass/mixins";
+// $color -> mixins.$color
+
+//Estilos
+@use "sass/estilos";
+
+// Paginas
+// pagina principal
+// pagina de contacto
+// pagina de aviso legal
+
+// Otros
+@use "sass/builtin";
